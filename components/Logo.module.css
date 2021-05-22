@@ -1,0 +1,7 @@
+.Logo {
+  display: block;
+  width: 200px;
+  height: 50px;
+  @media (--t) {
+  }
+}
