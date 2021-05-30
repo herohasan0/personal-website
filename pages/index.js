@@ -4,6 +4,7 @@ import Connect from '../components/Connect';
 import Header from '../components/Header';
 import Layout from '../components/Layout';
 import Projects from '../components/Projects';
+import Social from '../components/Social';
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
       <About />
       <Projects />
       <Connect />
+      <Social />
     </Layout>
   );
 }
