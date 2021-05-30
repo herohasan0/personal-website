@@ -1,0 +1,14 @@
+.Projects {
+  margin-top: 170px;
+}
+
+.top {
+  font-size: 24px;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
