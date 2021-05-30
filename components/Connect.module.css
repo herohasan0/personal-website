@@ -1,0 +1,18 @@
+.Connect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 170px;
+}
+
+.title {
+  font-size: 64px;
+}
+
+.desc {
+  font-size: 32px;
+  margin-top: 40px;
+  font-weight: 300;
+  line-height: 46px;
+}
