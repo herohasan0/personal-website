@@ -1,0 +1,17 @@
+.About {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+}
+
+.desc {
+  font-size: 20px;
+  line-height: 40px;
+  width: 540px;
+}
