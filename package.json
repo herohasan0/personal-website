@@ -4,6 +4,7 @@
   "description": "Hasan KAHRAMAN Personal Website",
   "main": "index.js",
   "dependencies": {
+    "@auth0/nextjs-auth0": "^1.4.0",
     "airtable": "^0.11.1",
     "next": "^10.2.2",
     "react": "^17.0.2",
