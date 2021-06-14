@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
-import A from './A';
+import A from './Link';
 
 import styles from './Navigation.module.css';
 

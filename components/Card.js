@@ -1,5 +1,5 @@
 import React from 'react';
-import A from './A';
+import A from './Link';
 
 import styles from './Card.module.css';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import A from './A';
+import A from './Link';
 
 import styles from './Logo.module.css';
 
