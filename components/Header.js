@@ -1,14 +1,15 @@
-import React from 'react';
+import { Heading } from '@chakra-ui/react';
 
-import styles from './Header.module.css';
+import Navigation from './Navigation';
 
 function Header({ ...props }) {
   return (
-    <div className={styles.Header}>
-      <h1>
+    <header>
+      <Navigation />
+      <Heading color="#27303b" as="h1" size="3xl" lineHeight="base">
         Hi I’m Hasan. <br /> I’m a JR front-end developer
-      </h1>
-    </div>
+      </Heading>
+    </header>
   );
 }
 
