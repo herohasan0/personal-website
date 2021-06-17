@@ -1,14 +1,20 @@
 import React from 'react';
-import Navigation from './Navigation';
 
-import styles from './Layout.module.css';
+import { Flex } from '@chakra-ui/layout';
 
-function Layout({ children }) {
+function Layout({ children, ...props }) {
   return (
-    <div className={styles.Layout}>
-      <Navigation />
+    <Flex
+      flexWrap={props.wrap}
+      flexDirection={props.dir}
+      maxW="914px"
+      ml="auto"
+      mr="auto"
+      alignItems={props.align}
+      mt={props.mt}
+    >
       {children}
-    </div>
+    </Flex>
   );
 }
 
