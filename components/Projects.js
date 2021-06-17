@@ -8,7 +8,7 @@ function Projects({ Projects }) {
   let allProjects = Projects.data;
 
   return (
-    <Box mt="170px">
+    <Box id="projects" mt="170px">
       <Layout wrap="wrap">
         <Box fontSize="24px">
           <Heading as="h2" fontSize="40px">

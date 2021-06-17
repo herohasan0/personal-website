@@ -30,13 +30,13 @@ function Navigation({ ...props }) {
         color={useColorModeValue('#27303b', 'white')}
       >
         <ListItem>
-          <Link>About</Link>
+          <Link href="#about">About</Link>
         </ListItem>
         <ListItem ml={{ base: '4', md: '6' }}>
-          <Link>Projects</Link>
+          <Link href="#projects">Projects</Link>
         </ListItem>
         <ListItem ml={{ base: '4', md: '6' }} mr={6}>
-          <Link>Contact</Link>
+          <Link href="#contact">Contact</Link>
         </ListItem>
         <DarkModeSwitch />
       </UnorderedList>

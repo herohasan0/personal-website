@@ -1,13 +1,12 @@
 import React from 'react';
 
-import { Image } from '@chakra-ui/react';
-import A from './Link';
+import { Image, Link } from '@chakra-ui/react';
 
 function Logo() {
   return (
-    <A href="/">
+    <Link href="/">
       <Image objectFit="cover" src="/logo.png" boxSize="36px" maxW="initial" />
-    </A>
+    </Link>
   );
 }
 

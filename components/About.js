@@ -6,7 +6,7 @@ import Layout from './Layout';
 
 function About({ ...props }) {
   return (
-    <Flex align="center" justifyContent="space-between">
+    <Flex id="about" align="center" justifyContent="space-between">
       <Layout dir={{ base: 'column', md: 'row' }} align="center">
         <div>
           <Image

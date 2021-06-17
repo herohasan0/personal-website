@@ -5,7 +5,7 @@ import Connect from './Connect';
 
 function Footer({ ...props }) {
   return (
-    <footer>
+    <footer id="contact">
       <Connect />
       <Social />
     </footer>
