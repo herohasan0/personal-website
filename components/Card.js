@@ -12,6 +12,7 @@ import {
 function Card({ Title, Description, Tags, Img }) {
   return (
     <Box
+      overflow="hidden"
       sx={{
         ':hover': {
           boxShadow: '0 8px 16px 0 rgba(0, 0, 0, 0.2)',
@@ -22,9 +23,11 @@ function Card({ Title, Description, Tags, Img }) {
       maxW="440px"
       mt="40px"
     >
-      <Box w="440px" h="230px">
+      {/* <Box overflow="hidden" w="440px" h="230px"> */}
+      <Box overflow="hidden" h="230px">
         <Image
           boxSize="100%"
+          // boxSize="100px"
           objectFit="cover"
           alt={Title}
           src={
@@ -32,9 +35,9 @@ function Card({ Title, Description, Tags, Img }) {
               ? Img
               : 'https://nicolesaidy.com/images/portfolio/booking-figma/figma-0.jpg'
           }
-        ></Image>
+        />
       </Box>
-      <Flex flexDirection="column" m="30px">
+      <Flex flexDirection="column" p="30px">
         <Flex>
           {Tags &&
             Tags.map((tag) => (
@@ -49,7 +52,8 @@ function Card({ Title, Description, Tags, Img }) {
           lineHeight="39px"
           fontWeight="700"
           color="#27303b"
-          w="380px"
+          overflow="hidden"
+          // w="380px"
           mt="7px"
         >
           <Link

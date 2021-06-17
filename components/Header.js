@@ -14,8 +14,9 @@ function Header({ ...props }) {
           h="calc(100vh - 200px)"
           color={useColorModeValue('#27303b', 'white')}
           as="h1"
-          size="3xl"
+          // size="3xl"
           lineHeight="base"
+          fontSize={{ base: '48px', md: '56px' }}
         >
           Hi I’m Hasan. <br /> I’m a JR front-end developer
         </Heading>

@@ -8,8 +8,8 @@ function Layout({ children, ...props }) {
       flexWrap={props.wrap}
       flexDirection={props.dir}
       maxW="914px"
-      ml="auto"
-      mr="auto"
+      ml={{ base: '18px', md: 'auto' }}
+      mr={{ base: '18px', md: 'auto' }}
       alignItems={props.align}
       mt={props.mt}
     >

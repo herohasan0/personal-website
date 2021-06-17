@@ -7,7 +7,7 @@ import styles from './Social.module.css';
 
 function Social() {
   return (
-    <Center h="49px" mt="170px" mb="50px">
+    <Center h="49px" mt="170px" mb="50px" mb="200px">
       {/* Twitter */}
       <A href="https://twitter.com/Hsn_Kahramn" className={styles.logo}>
         <Image src="/twitter.png" boxSize="32px" alt="Twitter" />

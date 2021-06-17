@@ -2,7 +2,13 @@ import Logo from './Logo';
 
 import DarkModeSwitch from './DarkModeSwitch';
 
-import { Flex, UnorderedList, ListItem, Link } from '@chakra-ui/react';
+import {
+  Flex,
+  UnorderedList,
+  ListItem,
+  Link,
+  useColorModeValue,
+} from '@chakra-ui/react';
 
 function Navigation({ ...props }) {
   return (
@@ -11,20 +17,25 @@ function Navigation({ ...props }) {
       justifyContent="space-between"
       align="center"
       mt="40px"
+      // mt={{ base: '20px', md: '40px' }}
+      // pl="20px"
+      // pr="20px"
       h="48px"
     >
       <Logo />
       <UnorderedList
         sx={{ display: 'flex', alignItems: 'center' }}
         styleType="none"
+        fontWeight="700"
+        color={useColorModeValue('#27303b', 'white')}
       >
-        <ListItem ml={6}>
+        <ListItem>
           <Link>About</Link>
         </ListItem>
-        <ListItem ml={6}>
+        <ListItem ml={{ base: '4', md: '6' }}>
           <Link>Projects</Link>
         </ListItem>
-        <ListItem ml={6} mr={6}>
+        <ListItem ml={{ base: '4', md: '6' }} mr={6}>
           <Link>Contact</Link>
         </ListItem>
         <DarkModeSwitch />

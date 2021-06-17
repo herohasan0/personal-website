@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 import Layout from './Layout';
 
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, Heading } from '@chakra-ui/react';
 
 function Projects({ Projects }) {
   let allProjects = Projects.data;
@@ -11,7 +11,9 @@ function Projects({ Projects }) {
     <Box mt="170px">
       <Layout wrap="wrap">
         <Box fontSize="24px">
-          <h2>Projects</h2>
+          <Heading as="h2" fontSize="40px">
+            Projects
+          </Heading>
         </Box>
         <Flex flexWrap="wrap" justifyContent="space-between" mt="50px">
           {allProjects.map((item) => (

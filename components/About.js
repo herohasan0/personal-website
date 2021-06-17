@@ -7,20 +7,25 @@ import Layout from './Layout';
 function About({ ...props }) {
   return (
     <Flex align="center" justifyContent="space-between">
-      <Layout align="center">
+      <Layout dir={{ base: 'column', md: 'row' }} align="center">
         <div>
           <Image
             alt="Hasan KAHRAMAN"
             objectFit="cover"
-            boxSize="280px"
             src="/profile.jpg"
             borderRadius="30px"
-            boxSize={48}
             mr="30px"
+            width={{ base: '9rem', md: '37rem' }}
           />
         </div>
         <div>
-          <Text ml="30px" fontSize="20px" lineHeight="40px" w="540px">
+          <Text
+            ml={{ base: '0', md: '30px' }}
+            mt={{ base: '20px', md: '0' }}
+            fontSize="20px"
+            lineHeight="40px"
+            lineHeight={{ base: '35px', md: '40px' }}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
