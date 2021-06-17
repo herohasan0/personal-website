@@ -16,6 +16,7 @@ function Projects({ Projects }) {
         <Flex flexWrap="wrap" justifyContent="space-between" mt="50px">
           {allProjects.map((item) => (
             <Card
+              key={item.Id}
               Title={item.Title}
               Description={item.Description}
               Tags={item.Tags}

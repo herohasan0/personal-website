@@ -1,9 +1,13 @@
 import React from 'react';
 
+import Social from './Social';
+import Connect from './Connect';
+
 function Footer({ ...props }) {
   return (
     <div>
-      <h1>Footer</h1>
+      <Connect />
+      <Social />
     </div>
   );
 }

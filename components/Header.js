@@ -1,4 +1,4 @@
-import { Heading } from '@chakra-ui/react';
+import { Heading, useColorModeValue } from '@chakra-ui/react';
 
 import Navigation from './Navigation';
 
@@ -11,8 +11,8 @@ function Header({ ...props }) {
         <Navigation />
         <Heading
           mt="200px"
-          h="100vh"
-          color="#27303b"
+          h="calc(100vh - 200px)"
+          color={useColorModeValue('#27303b', 'white')}
           as="h1"
           size="3xl"
           lineHeight="base"

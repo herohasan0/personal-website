@@ -1,9 +1,13 @@
 import React from 'react';
-import A from './Link';
 
-import { Box, Flex, Text } from '@chakra-ui/react';
-
-import styles from './Card.module.css';
+import {
+  Box,
+  Flex,
+  Text,
+  Image,
+  Link,
+  useColorModeValue,
+} from '@chakra-ui/react';
 
 function Card({ Title, Description, Tags, Img }) {
   return (
@@ -19,25 +23,22 @@ function Card({ Title, Description, Tags, Img }) {
       mt="40px"
     >
       <Box w="440px" h="230px">
-        <img
-          className={styles.img}
+        <Image
+          boxSize="100%"
+          objectFit="cover"
+          alt={Title}
           src={
             Img
               ? Img
               : 'https://nicolesaidy.com/images/portfolio/booking-figma/figma-0.jpg'
           }
-        ></img>
+        ></Image>
       </Box>
       <Flex flexDirection="column" m="30px">
         <Flex>
           {Tags &&
             Tags.map((tag) => (
-              <Box
-                mr="5px"
-                fontSize="12px"
-                color="#78818e"
-                className={styles.tags}
-              >
+              <Box key={tag} mr="5px" fontSize="12px" color="#78818e">
                 {tag}
               </Box>
             ))}
@@ -50,9 +51,13 @@ function Card({ Title, Description, Tags, Img }) {
           color="#27303b"
           w="380px"
           mt="7px"
-          className={styles.title}
         >
-          <A href={`https://${Title}`}>{Title}</A>
+          <Link
+            color={useColorModeValue('#27303b', 'white')}
+            href={`https://${Title}`}
+          >
+            {Title}
+          </Link>
           {/* Booking.com: Design system Figma library */}
         </Box>
         <Text mt="16px" lineHeight="30px" fontSize="16px">
