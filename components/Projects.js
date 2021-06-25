@@ -7,6 +7,8 @@ import { Box, Flex, Heading } from '@chakra-ui/react';
 function Projects({ Projects }) {
   let allProjects = Projects.data;
 
+  console.log(allProjects);
+
   return (
     <Box id="projects" mt="170px">
       <Layout wrap="wrap">
@@ -23,6 +25,8 @@ function Projects({ Projects }) {
               Description={item.Description}
               Tags={item.Tags}
               Img={item.Img ? item.Img[0].url : ''}
+              GithubLink={item.GithubLink}
+              LiveLink={item.LiveLink}
             />
           ))}
         </Flex>

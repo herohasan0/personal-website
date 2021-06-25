@@ -7,9 +7,10 @@ import {
   Image,
   Link,
   useColorModeValue,
+  Heading,
 } from '@chakra-ui/react';
 
-function Card({ Title, Description, Tags, Img }) {
+function Card({ Title, Description, Tags, Img, LiveLink, GithubLink }) {
   return (
     <Box
       overflow="hidden"
@@ -56,19 +57,35 @@ function Card({ Title, Description, Tags, Img }) {
           // w="380px"
           mt="7px"
         >
-          <Link
-            color={useColorModeValue('#27303b', 'white')}
-            href={`https://${Title}`}
-          >
+          <Heading as="h3" color={useColorModeValue('#27303b', 'white')}>
             {Title}
-          </Link>
+          </Heading>
           {/* Booking.com: Design system Figma library */}
         </Box>
         <Text mt="16px" lineHeight="30px" fontSize="16px">
           {Description}
-          {/* Created and maintaned the design system figma libraries, advocated for
-          the design system, trained product teams */}
         </Text>
+        <Flex mt="20px">
+          {GithubLink && (
+            <Text mr="20px">
+              <strong>
+                <Link isExternal href={GithubLink}>
+                  GitHub
+                </Link>
+              </strong>
+            </Text>
+          )}
+
+          {LiveLink && (
+            <Text>
+              <strong>
+                <Link isExternal href={LiveLink}>
+                  Live
+                </Link>
+              </strong>
+            </Text>
+          )}
+        </Flex>
       </Flex>
     </Box>
   );

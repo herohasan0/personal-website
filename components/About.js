@@ -15,7 +15,7 @@ function About({ ...props }) {
             src="/profile.jpg"
             borderRadius="30px"
             mr="30px"
-            width={{ base: '9rem', md: '37rem' }}
+            width={{ base: '9rem', md: '16rem' }}
           />
         </div>
         <div>
@@ -23,8 +23,8 @@ function About({ ...props }) {
             ml={{ base: '0', md: '30px' }}
             mt={{ base: '20px', md: '0' }}
             fontSize="20px"
-            lineHeight="40px"
             lineHeight={{ base: '35px', md: '40px' }}
+            width={{ base: '100%', md: '400px' }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

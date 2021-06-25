@@ -1,10 +1,17 @@
 import { getTable } from '@lib/airtable';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import About from '../components/About';
 import Projects from '../components/Projects';
 
+import ReactGA from 'react-ga';
+
 function HomePage(data) {
+  useEffect(() => {
+    ReactGA.initialize('G-7HQXVKFZZF');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  });
+
   return (
     <>
       <About />
