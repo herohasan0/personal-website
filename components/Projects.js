@@ -7,8 +7,6 @@ import { Box, Flex, Heading } from '@chakra-ui/react';
 function Projects({ Projects }) {
   let allProjects = Projects.data;
 
-  console.log(allProjects);
-
   return (
     <Box id="projects" mt="170px">
       <Layout wrap="wrap">
