@@ -13,6 +13,6 @@ module.exports = {
     twitter: 'https://twitter.com/Hsn_Kahramn',
     github: 'https://github.com/kahasan',
     hackerrank: 'https://www.hackerrank.com/kahraman_h',
-    linkedin: 'https://www.linkedin.com/in/hasan-kahraman-790289111/',
+    linkedin: 'https://www.linkedin.com/in/hasankahraman-me/',
   },
 };
