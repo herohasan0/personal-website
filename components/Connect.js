@@ -15,8 +15,8 @@ function Connect() {
         </div>
         <div>
           <Text fontSize="32px" mt="40px" fontWeight="300" lineHeight="46px">
-            I'm interested in chatting about design, feel free to connect with
-            me on any of the social platforms below.{' '}
+            I'm interested in chatting about code and design. Feel free to
+            connect with me on any of the social platforms below.{' '}
           </Text>
         </div>
       </Layout>

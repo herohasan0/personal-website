@@ -20,17 +20,16 @@ function About({ ...props }) {
         </div>
         <div>
           <Text
-            ml={{ base: '0', md: '30px' }}
+            ml={{ base: '0', md: '60px' }}
             mt={{ base: '20px', md: '0' }}
             fontSize="20px"
             lineHeight={{ base: '35px', md: '40px' }}
             width={{ base: '100%', md: '400px' }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum.
+            I'm a JR front-end developer who is trying to best. I like to dive
+            into new frameworks and technologies. Currently trying to better in
+            React. Always design pixel-perfect! I'm passionate about taking
+            pictures and travel.
           </Text>
         </div>
       </Layout>
